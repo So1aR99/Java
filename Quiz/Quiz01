@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Q. 변수교환
+        // Scanner를 이용해서 두 수를 입력받아
+        // a, b에 100, 200받아. 이를 값을 교환
+        // b<-200, a<-100 어떻게 코딩해야 할까?
+        Scanner sc = new Scanner(System.in);
+        int a, b;
+        a = Integer.parseInt(sc.nextLine());
+        b = Integer.parseInt(sc.nextLine());
+
+        System.out.println("a : " + a + " b : " + b);
+        //코딩
+        int t = a;
+        a = b;
+        b = t;
+
+        System.out.println("a : " + a + " b : " + b);
+
+    }
+}
