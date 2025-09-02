@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+
+        for(int i=2; i<=100; i++) {
+            int j = 0;
+            for (j=2; j<=100; j++) {
+                if (i % j == 0)
+                    break;
+            }
+            if ( i == j ) System.out.print(i + " ");
+        }
+    }
+}
