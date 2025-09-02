@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("0~100까지 정수 중 하나를 입력하세요 : ");
+        int N = sc.nextInt();
+
+        if (N < 101 && N > 89) System.out.println("A학점입니다.");
+        else if (N < 90 && N > 79) System.out.println("B학점입니다.");
+        else if (N < 80 && N > 69) System.out.println("C학점입니다.");
+        else if (N < 70 && N > 59) System.out.println("D학점입니다.");
+        else System.out.println("F학점입니다.");
+    }
+}
