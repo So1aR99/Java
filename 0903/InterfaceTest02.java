@@ -38,7 +38,7 @@ public class Main {
         System.out.println(RemoteControl.MIN_VALUE);
         System.out.println(A.max);
 
-        B b = new B();
+        //B b = new B();
 
     }
 }
