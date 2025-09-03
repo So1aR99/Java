@@ -9,6 +9,5 @@ class Test extends ClassA implements A, B{
 
 public class Main extends ClassB implements B, A{
     public static void main(String[] args) {
-
     }
 }
