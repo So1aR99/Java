@@ -1,0 +1,15 @@
+package com.google.hero;
+
+public class WhiteWizard extends Wizard{
+    public WhiteWizard(){
+        this.name = "화이트 위저드";
+        this.level = 35;
+        this.hp = 200;
+        this.mp = 1000;
+    }
+
+    @Override
+    public void attack() {
+        System.out.println("전용 마법을 사용한다!!");
+    }
+}
