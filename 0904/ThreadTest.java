@@ -12,7 +12,6 @@ class Test2 implements Runnable {
         System.out.println("Test2 Thread에서 실행중 - " + name);
     }
 }
-
 public class Main {
     public static void main(String[] args) {
         Test t = new Test();
