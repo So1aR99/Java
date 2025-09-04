@@ -8,7 +8,6 @@ interface Runnable {
     void run(); // public static 생략되어 있다!!
 }
 class A {
-
 }
 class Lion extends Manmal implements Flyable, Runnable {
     @Override
