@@ -12,10 +12,10 @@ class A {
 }
 class Lion extends Manmal implements Flyable, Runnable {
     @Override
-    public void eat() {
+    public void eat() {     // abstract method는 강제 구현되어야 한다.
     }
     @Override
-    public void fly() {
+    public void fly() {     // interface method도 abstract method처럼 강제 구현 된다!!
     }
     @Override
     public void run() {
