@@ -32,7 +32,6 @@ class Tiger extends Manmal implements Flyable, Runnable {
     public void run() {
     }
 }
-
 public class Main {
     public static void main(String[] args) {
     }
