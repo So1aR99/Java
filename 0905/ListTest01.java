@@ -1,0 +1,38 @@
+import java.util.ArrayList;
+import java.util.List;
+
+//TIP 코드를 <b>실행</b>하려면 <shortcut actionId="Run"/>을(를) 누르거나
+// 에디터 여백에 있는 <icon src="AllIcons.Actions.Execute"/> 아이콘을 클릭하세요.
+public class Main {
+    public static void main(String[] args) {
+
+        List<String> list = new ArrayList<String>();
+
+        list.add("Java");
+        list.add("JDBC");
+        list.add("Servlet/JSP");
+        list.add(2,"Database");
+        list.add("iBATIS");
+
+        for(int i=0; i<list.size(); i++){
+            String item = list.get(i);
+            System.out.println(item);
+        }
+        int size = list.size();
+        System.out.println("총 개수 : " + size);
+        System.out.println();
+
+        // 2번 인덱스의 객체 얻기
+        String skill = list.get(2);
+        System.out.println(skill);
+
+        // 요소 제거
+        list.remove(0);     // index로 삭제 가능
+        list.remove("JDBC");    // 값으로 삭제 가능
+
+        for(int i=0; i<list.size(); i++) {
+            String item = list.get(i);
+            System.out.println(item);
+        }
+    }
+}
