@@ -75,3 +75,13 @@ public class Main {
         System.out.println("전화번호: " + person.getPhoneNumber());
     }
 }
+/*
+결과
+
+이름: 홍길동
+나이: 22
+주소: 서울 종로구 8282
+전화번호: 010-1234-5678
+
+
+*/
