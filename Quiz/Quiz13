@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+
+class Animal {
+void makeSound() {
+        System.out.println("동물 소리");
+    }
+}
+class Dog extends Animal {
+@Override
+    void makeSound() {
+        System.out.println("멍멍!");
+    }
+}
+class Cat extends Animal {
+@Override
+    void makeSound() {
+        System.out.println("야옹~");
+    }
+}
+class Cow extends Animal {
+@Override
+    void makeSound() {
+        System.out.println("음메~");
+    }
+}
+
+public class Main {
+public static void main(String[] args) {
+        ArrayList<Animal> animals = new ArrayList<>();
+
+        Dog dog = new Dog();
+        Cat cat = new Cat();
+        Cow cow = new Cow();
+
+        animals.add(dog);
+        animals.add(cat);
+        animals.add(cow);
+
+for(Animal item : animals) {
+            item.makeSound();
+        }
+    }
+}
