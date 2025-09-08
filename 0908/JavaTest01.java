@@ -21,7 +21,6 @@ public class Main {
         m.func1();
         String s = m.func1();
         System.out.println(s);
-
         m.func2(7);
         int result1 = m.func2(7);
         System.out.println(result1);
