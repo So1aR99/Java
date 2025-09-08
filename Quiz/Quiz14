@@ -38,23 +38,23 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         BankAccount ba = new BankAccount();
+        while (true) {
+            System.out.print("입금할 금액을 입력하세요 : ");
+            int a = sc.nextInt();
+            ba.deposit(a);
+            System.out.print("출금할 금액을 입력하세요 : ");
+            int b = sc.nextInt();
+            ba.withdraw(b);
+            ba.getBalance();
 
-        System.out.print("입금할 금액을 입력하세요 : ");
-        int a = sc.nextInt();
-        ba.deposit(a);
-        System.out.print("출금할 금액을 입력하세요 : ");
-        int b = sc.nextInt();
-        ba.withdraw(b);
-        ba.getBalance();
+            System.out.println();
+            System.out.println("계속 입금하시려면 (1)번 종료하시려면 (2)번 입력");
+            int c = sc.nextInt();
 
-        System.out.println();
-
-        System.out.print("입금할 금액을 입력하세요 : ");
-        int c = sc.nextInt();
-        ba.deposit(c);
-        System.out.print("출금할 금액을 입력하세요 : ");
-        int d = sc.nextInt();
-        ba.withdraw(d);
-        ba.getBalance();
+            if (c != 1) {
+                System.out.println("프로그램 종료");
+                break;
+            }
+        }
     }
 }
