@@ -12,7 +12,6 @@ class BankAccount {
             balance -= amount;
             System.out.println((int) amount + "원 출금완료, 현재잔액 : " + (int) balance + "원");
         }
-
     }
     void getBalance() {     // 현재잔고
         System.out.println("현재잔액 : " + (int)balance + "원");
