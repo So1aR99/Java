@@ -7,8 +7,12 @@ class BankAccount {
         System.out.println( (int)amount + "원 입금완료, 현재잔액 : " + (int)balance + "원");
     }
     void withdraw(double amount) {  // 출금
-        balance -= amount;
-        System.out.println( (int)amount + "원 출금완료, 현재잔액 : " + (int)balance + "원");
+        if(amount>balance) System.out.println("잔액이 부족합니다. 현재잔액 " + (int)balance + "원 출금가능");
+        else {
+            balance -= amount;
+            System.out.println((int) amount + "원 출금완료, 현재잔액 : " + (int) balance + "원");
+        }
+
     }
     void getBalance() {     // 현재잔고
         System.out.println("현재잔액 : " + (int)balance + "원");
@@ -25,7 +29,7 @@ public class Main {
         System.out.println();
 
         ba.deposit(3000);
-        ba.withdraw(4000);
+        ba.withdraw(6500);
         ba.getBalance();
     }
 }
