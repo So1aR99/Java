@@ -32,3 +32,29 @@ public class Main {
         ba.getBalance();
     }
 }
+-----------------------------------------------------------
+// 입금 출금 입력받아서 출력
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        BankAccount ba = new BankAccount();
+
+        System.out.print("입금할 금액을 입력하세요 : ");
+        int a = sc.nextInt();
+        ba.deposit(a);
+        System.out.print("출금할 금액을 입력하세요 : ");
+        int b = sc.nextInt();
+        ba.withdraw(b);
+        ba.getBalance();
+
+        System.out.println();
+
+        System.out.print("입금할 금액을 입력하세요 : ");
+        int c = sc.nextInt();
+        ba.deposit(c);
+        System.out.print("출금할 금액을 입력하세요 : ");
+        int d = sc.nextInt();
+        ba.withdraw(d);
+        ba.getBalance();
+    }
+}
