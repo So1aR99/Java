@@ -101,3 +101,11 @@ public class Main {
         System.out.println("키워드 : " + webPage1.getKeywords());
     }
 }
+/*
+출력결과
+홈페이지: https://www.verthasystem.co.kr
+작성자 : 하성호
+부가설명 : 이 곳은 웹 첫페이지 테스트 입니다.
+내용 : <htmnl><body><h1>안녕하세요! </h1></body></html>
+키워드 : [테스트, html page, 홈페이지]
+*/
