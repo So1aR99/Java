@@ -9,7 +9,7 @@ public class Main {
 
         map.put("이순신", 85);
         map.put("홍길동", 90); // 없어짐
-        map.put("강장군", 80);
+        map.put("강장군", 100);
         map.put("홍길동", 95); // 키값이 홍길동으로 동일한 Entry는 나중에 입력된 Entry로 저장
 
         // Key정렬이 필요하다면 TreeMap으로 바꾸자
