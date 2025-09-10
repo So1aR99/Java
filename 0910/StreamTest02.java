@@ -27,10 +27,12 @@ public class Main {
         );
 
         Stream<Student> stream = list.stream();
-        stream.forEach(s -> {
-            String name = s.getName();
-            int score = s.getScore();
-            System.out.println(name + "-" + score);
+        stream.forEach(s -> { System.out.println(s.getName() + "-" + s.getScore());
         });
+        //stream.forEach(s -> {
+        //    String name = s.getName();
+        //    int score = s.getScore();
+        //    System.out.println(name + "-" + score);
+        //});
     }
 }
