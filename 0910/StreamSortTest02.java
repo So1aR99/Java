@@ -43,7 +43,7 @@ public class Main {
             .sorted(Comparator.comparing(Student::getName))
             .forEach(s -> System.out.println(s.getName() + "/" + s.getScore()));
 
-        // 이름 기준 내림차순 정렬
+        // 이름 기준 내림차순 정렬.
         System.out.println("이름 내림차순 정렬:");
         list.stream()
             .sorted(Comparator.comparing(Student::getName).reversed())
