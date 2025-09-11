@@ -16,7 +16,7 @@ public class AppMain extends Application {
         HBox root = new HBox();
         root.setPrefSize(200, 50);
         root.setAlignment(Pos.CENTER);
-        root.setSpacing(20);        // 여백
+        root.setSpacing(20);       // 여백
 
         // 버튼 달기
         Button btn1 = new Button("OK");
